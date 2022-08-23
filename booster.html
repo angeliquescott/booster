@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');</style>    
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="booster.css">
+  </head>
+  <body>
+    <div id="window-login-container" class="window-login-container">
+      <img src="/images/Big-Logo-Header.png" style="width: 356px;" />
+
+      <div id="login-container-main" class="login-container-main">
+        <div class="welcome-container">
+          <h5>LOG IN</h5>
+          <h2>Welcome to Your<br />Property Sale Booster</h2>
+        </div>
+
+        <div class="login-container" >
+          <div class="email-container">
+            <label for="email" class="translate">Email Address</label>
+            <input id="login_email" name="login_email" class="translate" placeholder="Enter your Email Address" />
+          </div>
+          <div class="password-container">
+            <label for="password" class="translate">Password</label>
+            <div style="display: flex; flex-direction: row;">
+              <input type="password" id="password" name="password" class="translate" placeholder="Enter your Password" />
+              <i class="far fa-eye" id="togglePassword"></i>
+            </div>
+          </div>
+        </div>
+
+        <div id="forgot-password-container" class="forgot-password-container">
+          <a>Forgot Password?</a>
+        </div>
+      </div>
+
+      <div id="forgot-password-container-main" class="forgot-password-container-main" style="display: none;">
+        <div class="header-container">
+          <h5>FORGOT PASSWORD</h5>
+          <h2>We'll send a recovery<br />link to</h2>
+        </div>
+        <div class="email-container">
+          <label for="email" class="translate">Email Address</label>
+          <input id="email" name="email" class="translate" placeholder="Enter your Email Address" value="paul@elepay.com.au" />
+        </div>
+        <div id="return-to-login-container" class="return-to-login-container">
+          <a style="text-decoration: underline; text-align: right; padding-right: 30px;">Return to Login</a>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button id="loginButton">LOGIN</button>
+        <button id="sendRecoveryLinkButton" style="display: none;">SEND RECOVERY LINK</button>
+      </div>
+
+      <hr />
+
+      <div class="elepay-support-container">
+        <span>Elepay Support</span>
+        &nbsp;|&nbsp;
+        <span style="text-decoration: underline;">1300 019 417</span>
+        <span id="versionLabel" style="float:right"></span>
+      </div>
+    </div>
+
+    <div id="window-versionwarning-container" class="window-versionwarning-container" style="display: none;">
+      <div>
+        <img src="/images/Blue-Banner-With-Logo.jpg" />        
+      </div>
+      <div>
+        <div class="header">Version out of date</div>   
+        <div id="versionwarning-message">Please update your Chrome extensions to load the latest version of the Elepay Chrome extension.</div>
+      </div>
+    </div>
+
+    <div id="window-dashboard-container" class="window-dashboard-container" style="display: none;">
+      <div class="banner">
+        <img src="/images/Blue-Banner-With-Logo.jpg" />
+        <a id="logOutLink" class="log-out-link">Log Out</a>
+      </div>
+      <div class="content">
+        <div class="header">Booster Dashboard</div>
+        <div class="search-container">
+          <img src="/images/search.png" />
+          <input type="search" id="search" name="search" class="translate" placeholder="Search for a booster..." />
+          <button id="searchButton" class="search-button">Search</button>
+        </div>
+        <hr class="search-divider" />
+        <div class="search-result-container">
+          <div class="no-listing" id="no-listings" style="display: none;">No Listing to Show</div>
+          <div id="listings" style="display: none;">
+            <div class="most-recent-header">Most Recent 10 Listings</div>
+          </div>
+        </div>
+      </div>
+      <hr class="end-divider" />
+      <div class="bottom-navigation-container">
+        <div class="agent-name" style="width: 37% !important;">
+          Paul Smith
+        </div>
+        <div>          
+          <button id="marketingButton" class="new-button">Marketing</button>
+        </div>
+        <div class="navigation-button-container">
+          <button id="newButton" class="new-button">+ NEW</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="window-new-listing-container" class="window-new-listing-container" style="display: none;">
+      <div class="banner">
+        <img src="/images/Blue-Banner-With-Logo.jpg" />
+        <a id="logOutLink" class="log-out-link">Log Out</a>
+      </div>
+      <div class="content">
+        <a id="back" class="back-navigation">< BACK</a>
+        <div class="header">New Listing Details</div>
+        <div class="listing-details-container">
+          <div class="details-container">
+            <div>
+              <label for="firstName" class="translate">First Name</label>
+              <input id="firstName" name="firstName" class="translate" placeholder="First Name" />
+            </div>
+            <div>
+              <label for="lastName" class="translate">Last Name</label>
+              <input id="lastName" name="lastName" class="translate" placeholder="Last Name" />
+            </div>
+          </div>
+          <div class="details-container" style="margin-top: 15px;">
+            <div>
+              <label for="contactNumber" class="translate">Contact Number</label>
+              <input id="contactNumber" name="contactNumber" class="translate" placeholder="0123 456 789" />
+            </div>
+            <div>
+              <label for="emailAddress" class="translate">Email Address</label>
+              <input id="emailAddress" name="emailAddress" class="translate" placeholder="name@domain.com" />
+            </div>
+          </div>
+        </div>
+        <div class="header second-header">
+          New Property Details
+          <div style="width: 50%;">
+            <select id="propertyType" name="propertyType" class="property-type-select">
+              <option value="" class="translate">Property Type</option>
+              <option class="translate">House</option>
+              <option class="translate">Apartment</option>
+              <option class="translate">Unit</option>
+              <option class="translate">Townhouse</option>
+            </select>
+          </div>
+        </div>
+        <div class="property-details-container">
+          <div class="details-container">
+            <div>
+              <label for="fullAddress" class="translate">Insert Full Address</label>
+              <input id="fullAddress" name="fullAddress" class="translate" placeholder="Full Listing Address" />
+              <div id="addressResults" class="mapSearchResults"></div>
+            </div>
+          </div>
+          <div class="details-container">
+            <div>
+              <label for="startDate" class="translate">Start Date</label>
+              <input type="date" id="startDate" name="startDate" class="translate" style="font-size: 11px;" placeholder="yyyy-mm-dd" min="1997-01-01" max="2040-12-31" />
+            </div>
+            <div>
+              <label for="lowPriceRange" class="translate">Low Price Range</label>
+              <input id="lowPriceRange" name="lowPriceRange" class="translate" placeholder="$0.00" />
+            </div>
+            <div>
+              <label for="highPriceRange" class="translate">High Price Range</label>
+              <input id="highPriceRange" name="highPriceRange" class="translate" placeholder="$0.00" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="end-divider" />
+      <div class="bottom-navigation-container">
+        <div class="agent-name">
+          Paul Smith
+        </div>
+        <div class="navigation-button-container">
+          <button id="calculateButton" class="calculate-button" disabled>CALCULATE BOOSTER ></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="window-approved-booster-container" class="window-approved-booster-container" style="display: none;">
+      <div class="banner">
+        <img src="/images/Blue-Banner-With-Logo.jpg" />
+        <a id="logOutLink" class="log-out-link">Log Out</a>
+      </div>
+      <div class="content">
+        <div style="display: flex;">
+          <div style="width: 50%;"><a id="back" class="back-navigation">< BACK</a></div>
+          <div style="width: 50%; text-align: right;"><a id="editDetails" class="edit-details-link">Edit Details</a></div>
+        </div>
+        <div class="header">Approved Sale Booster</div>
+        <div class="booster-approval-container">
+          <div class="booster-approval-no-fee-container">
+            <div id="detailsAddress" class="booster-details-address"></div>
+            <div class="booster-offer-container">
+              <div class="offer-amount-container">
+                <div class="offer-amount-heading">Booster Amount</div>
+                <div class="offer-amount" id="offerAmount"></div>
+              </div>
+              <div class="no-fee-button-container">
+                <button id="createProposalNoFeeButton" class="create-proposal-no-fee-button">CREATE PROPOSAL</button>
+              </div>
+            </div>
+            <div class="return-heading">You can present a Sale Booster proposal without nominating as to WHO pays<br />the fee. You can return to this screen later and select who's paying.</div>
+          </div>
+          <div class="booster-approval-fee-container">
+            <div class="fee-continue-heading">
+              OR CONTINUE BY SELECTING A FEE PAYMENT OPTION:
+            </div>
+            <div class="fee-options-container">
+              <div>
+                <input type="checkbox" id="propertyOwnerPays" name="propertyOwnerPays" />
+                <label id="propertyOwnerPaysLabel">Property Owner Pays</label>
+
+                <div class="booster-mini-container">
+                  <div>
+                    <div class="mini-label">Property Sale Booster</div>
+                    <div class="mini-content" id="propertyOwnerAmount"></div>
+                  </div>
+                  <div>
+                    <div class="mini-label">120 Day Fee</div>
+                    <div class="mini-content" id="propertyOwnerFee"></div>
+                  </div>
+                  <div>
+                    <div class="mini-label">Total Amount Payable</div>
+                    <div class="mini-content bold" id="propertyOwnerTotal"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="agent-pays-container">
+                <input type="checkbox" id="listingAgentPays" name="listingAgentPays" />
+                <label id="listingAgentPaysLabel">Listing Agent Pays</label>
+
+                <div style="display: flex;">
+                  <div style="width: 56%;">
+                    <label for="proposedCommissionRate" class="mini-label">Proposed Commission Rate (enter % eg. 2.5)</label>
+                    <input id="proposedCommissionRate" name="proposedCommissionRate" class="proposed-commission-input" placeholder="Enter %" disabled />
+                  </div>
+                  <div style="width: 44%;">
+                    <div class="mini-label" style="margin-top: 3px;">Proposed Gross Commission</div>
+                    <div id="proposedGrossCommission" class="proposed-gross-commission"></div>
+                  </div>
+                </div>
+
+                <div style="display: flex; margin-top: 10px;">
+                  <div style="width: 56%; font-size: 8px;">
+                    <div class="mini-label">Less: Property Sale Booster Fee</div>
+                    <div id="lessFee" class="fee" style="color: #E75F3C; font-size: 12px;"></div>
+                  </div>
+                  <div style="width: 44%; font-size: 8px;">
+                    <div class="mini-label">Net Commission Rate</div>
+                    <div id="netCommissionRate" class="net-commission-rate" style="font-size: 12px;"></div>
+                  </div>
+                </div>
+                <div style="display: flex; margin-top: 20px;">
+                  <div class="net-commission">
+                    <div class="net-commission-heading">Net Commission</div>
+                    <div id="netCommission" class="net-commission-amount"></div>
+                  </div>
+                  <div style="margin-top: -8px; margin-left: 10px;">
+                    <button id="createProposalFeeButton" class="create-proposal-fee-button" disabled>CREATE PROPOSAL</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="end-divider" />
+      <div class="bottom-navigation-container">
+        <div class="agent-name">
+          Paul Smith
+        </div>
+        <div class="navigation-button-container">
+          <button id="returnToDashboardBoosterButton" class="return-to-dashboard-button">RETURN TO DASHBOARD</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="window-application-container" class="window-application-container" style="display: none;">
+      <div class="banner">
+        <img src="/images/Blue-Banner-With-Logo.jpg" />
+        <a id="logOutLink" class="log-out-link">Log Out</a>
+      </div>
+      <div class="content">
+        <a id="back" class="back-navigation">< BACK</a>
+        <div class="header">In Process</div>
+        <h2>Application has been<br />submitted</h2>
+        <div>
+          <div style="font-size: 9px;">Listing</div>
+          <div id="detailsAddress" class="submitted-details-address"></div>
+        </div>
+        <div style="margin-top: 17px; margin-bottom: 17px; height: 39.5px;">
+          <div style="font-size: 9px;">Link To Application in Partner Portal</div>
+          <a id="partnerPortalLink" class="partner-portal-link">https://portal.elepay.com.au/login</a>
+        </div>
+        <div style="margin-top: 17px; margin-bottom: 17px; height: 170px;">
+
+          <div class="property-owner-main-details" style="display: none;">
+            <div class="property-owner-details">
+              <div style="font-size: 14px; font-weight: bold; margin-top: 10px; margin-left: 29px;">Property Owner Pays</div>
+              <div class="property-owner-details-details">
+                <div class="booster-mini-container" style="width: 100%;">
+                  <div>
+                    <div class="mini-label">Property Sale Booster</div>
+                    <div class="mini-content" id="propertyOwnerAmountS"></div>
+                  </div>
+                  <div>
+                    <div class="mini-label">120 Day Fee</div>
+                    <div class="mini-content" id="propertyOwnerFeeS"></div>
+                  </div>
+                  <div>
+                    <div class="mini-label">Total Amount Payable</div>
+                    <div class="mini-content bold" id="propertyOwnerTotalS"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="listing-agent-main-details" style="display: none;">
+            <div class="listing-agent-details">
+              <div style="font-size: 14px; font-weight: bold; margin-top: 10px;">Listing Agent Pays</div>
+              <div class="listing-agent-details-details">
+                <div style="display: flex;">
+                  <div style="width: 56%;">
+                    <label for="proposedCommissionRate" class="mini-label">Proposed Commission Rate</label>
+                    <input id="proposedCommissionRate" name="proposedCommissionRate" class="proposed-commission-input" disabled />
+                  </div>
+                  <div style="width: 44%;">
+                    <div class="mini-label" style="margin-top: 3px;">Proposed Gross Commission</div>
+                    <div id="proposedGrossCommission" class="proposed-gross-commission"></div>
+                  </div>
+                </div>
+                <div style="display: flex; margin-top: 10px;">
+                  <div style="width: 56%; font-size: 8px;">
+                    <div class="mini-label">Less: Property Sale Booster Fee</div>
+                    <div id="lessFee" class="fee" style="color: #E75F3C; font-size: 12px;"></div>
+                  </div>
+                  <div style="width: 44%; font-size: 8px;">
+                    <div class="mini-label">Net Commission Rate</div>
+                    <div id="netCommissionRate" class="net-commission-rate" style="font-size: 12px;"></div>
+                  </div>
+                </div>
+                <div style="margin-top: 20px;">
+                  <div class="net-commission">
+                    <div class="net-commission-heading">Net Commission</div>
+                    <div id="netCommission" class="net-commission-amount"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <hr class="end-divider" />
+      <div class="bottom-navigation-container">
+        <div class="agent-name" style="width: 47% !important;">
+          Paul Smith
+        </div>
+        <div class="navigation-button-container">
+          <button id="returnToDashboardApplicationButton" class="return-to-dashboard-button">RETURN TO DASHBOARD</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="booster.js"></script>
+  </body>
+</html>

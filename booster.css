@@ -1,0 +1,706 @@
+body {
+    margin: 0;
+    width: 415px;
+    height: 550px;
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+  
+  .window-login-container {
+    width: 380px;
+    height: 510px;
+    padding: 25px;
+    display: block;
+  }
+  
+  .login-container-main {
+    height: 356px;
+  }
+  
+  .welcome-container h5 {
+    color: #120270;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .welcome-container h2 {
+    color: #4139FF;
+    font-size: 31px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+  
+  .login-container {
+    margin-top: 30px;
+  }
+  
+  .login-container div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-container div label {
+    font-size: 9px;
+    color: #aeaeae;
+    padding-bottom: 5px;
+  }
+  
+  input:not([type="checkbox"]) {
+    padding: 5px;
+    padding-left: 20px;
+    height: 30px;
+    width: 335px;
+    border-radius: 8px; 
+    border-color: #F5F5F5;
+    border-width: 1.5px;
+    border-style: solid;
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+  
+  input::placeholder {
+    font-style: italic;
+    color: #E5E5E5;
+    font-size: 12px;
+    font-family: 'Poppins', system-ui, sans-serif;
+    padding-left: 2px;
+  }
+  
+  input:not(:placeholder-shown) {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+  
+  .email-container {
+    margin-bottom: 15px;
+  }
+  
+  input[type="password"] {
+    width: 88%;
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+  
+  .password-container i {
+    position: absolute;
+    right: 43px;
+    margin-top: 17px;
+    opacity: 0.2;
+  }
+  
+  .forgot-password-container {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+  }
+  
+  .forgot-password-container a {
+    float: right;
+    font-size: 9px;
+    color: #4139FF;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    text-decoration: underline;
+    text-align: right;
+  }
+  
+  .button-container {
+    margin-bottom: 10px;
+  }
+  
+  .window-login-container hr {
+    border: 0.17px solid #707070;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    opacity: 0.2;
+  }
+  
+  .elepay-support-container {
+    color: #4239ff;
+    font-size: 10px;
+    padding-top: 5px;
+    letter-spacing: 0.2px;
+  }
+  
+  /*---------------------------
+  Forgot Password
+  ---------------------------*/
+  
+  .forgot-password-container-main div h5 {
+    color: #120270;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .forgot-password-container-main div h2 {
+    color: #4139FF;
+    font-size: 31px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+  
+  .forgot-password-container-main .email-container {
+    margin-top: 40px;
+  }
+  
+  .forgot-password-container-main div label {
+    font-size: 9px;
+    color: #aeaeae;
+    padding-bottom: 5px;
+  }
+  
+  .forgot-password-container-main input {
+    margin-top: 5px;
+    font-size: 12px;
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+  
+  .return-to-login-container {
+    margin-bottom: 160px;
+  }
+  
+  .forgot-password-container-main div a {
+    float: right;
+    font-size: 9px;
+    color: #4139FF;
+  }
+  
+  /*---------------------------
+  Dashboard
+  ---------------------------*/
+  
+  .window-dashboard-container {
+    width: 415px;
+    height: 550px;
+    display: block;
+  }
+  
+  .banner {
+    display: flex;
+  }
+  
+  .banner img {
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .log-out-link {
+    color: #fff;
+    width: 100%;
+    text-align: right;
+    padding-right: 33px;
+    padding-top: 15px;
+    text-decoration: underline;
+  }
+  
+  .content {
+    margin-top: 32px;
+    padding:  0 20px 0 30px;
+  }
+  
+  .header {
+    font-size: 15px;
+    color: #4139FF;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+  }
+  
+  .search-container {
+    display: flex;
+  }
+  
+  .search-container img {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin-top: 21px;
+    margin-left: 12px;
+  }
+  
+  input[type="search"] {
+    height: 30px;
+    width: 253px;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0px 3px 6px #0000000D;
+    font-family: 'Poppins', system-ui, sans-serif;
+    padding-left: 30px;
+  }
+  
+  input[type="search"]::placeholder {
+    padding-left: 20px;
+    color: #969696;
+    opacity: 0.6;
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-size: 10px;
+    padding-left: 0;
+  }
+  
+  .search-button {
+    width: 88px;
+    height: 30px;
+    margin-left: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    box-shadow: 0px 3px 6px #00000029;
+  }
+  
+  .search-divider {
+    margin: 5px 0 15px 0;
+    opacity: 0.2;
+  }
+  
+  .search-result-container {
+    height: 333px;
+  }
+  
+  .search-result-container div div {
+    font-size: 14px;
+    color: #333333;
+    padding-left: 5px;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  .search-result-container div {
+    display: flex;
+    padding-bottom: 4px;
+  }
+  
+  .search-result-container div img {
+    width: 14px;
+    height: 14px;
+    margin-top: 3px;
+  }
+  
+  .no-listing {
+    font-size: 14px;
+    font-style: italic;
+    color: #6E6E6E !important;
+    opacity: 0.7;
+  }
+  
+  .most-recent-header {
+    font-size: 14px;
+    color: #6E6E6E !important;
+    margin-bottom: 5px;
+    letter-spacing: 0.2px;
+  }
+  
+  .end-divider {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 87%;
+    opacity: 0.2;
+  }
+  
+  .bottom-navigation-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .agent-name {
+    width: 63%;
+    padding-left: 28px;
+    margin-top: 17px;
+    font-weight: 500;
+    font-size: 10px;
+  }
+  
+  .new-button {
+    width: 88px;
+    height: 30px;
+    margin-left: 10px;
+    font-size: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 0px 3px 6px #00000029;
+    letter-spacing: 0.3px;
+  }
+  
+  /*-------------------------
+  New Listing Details
+  -------------------------*/
+  .window-new-listing-container .content {
+    height: 427px;
+  }
+  
+  .listing-details-content {
+    padding: 20px;
+  }
+  
+  .back-navigation {
+    color: #130370;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .details-container {
+    display: flex;
+    margin-top: 5px;
+  }
+  
+  .details-container div {
+    width: 50%;
+  }
+  
+  .details-container label {
+    font-size: 9px;
+    color: #aeaeae;
+    padding-bottom: 5px;
+    letter-spacing: 0.2px;
+  }
+  
+  .details-container input {
+    margin-top: 3px;
+    width: 85%;
+    font-family: 'Poppins', system-ui, sans-serif;
+    padding-left: 10px;
+    background-color: #fff;
+  }
+  
+  .details-container input::placeholder {
+    padding-left: 0;
+  }
+  
+  .details-container input:not(:placeholder-shown) {
+    font-size: 12px;
+    font-weight: bold;
+    width: 85%;
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+  
+  .second-header {
+    margin-top: 30px;
+    display: flex;
+  }
+  
+  .new-property-header {
+    color: #4e47ff;
+    font-size: 16px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  .property-type-select {
+    border: none;
+    border-bottom: 1px solid #F5F5F5;
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-size: 10px;
+    color: #969696;
+    float: right;
+    width: 128.67px;
+    height: 20.6px;
+    margin-top: 3px;
+  }
+  
+  select::after {
+    font-weight: bold;
+  }
+  
+  .property-details-container .details-container:first-child div:first-child {
+    width: 100%;
+  }
+  
+  .property-details-container .details-container:first-child div:first-child input {
+    width: 92%;
+  }
+  
+  .property-details-container .details-container:last-child div {
+    width: 112.65px;
+    padding-right: 7px;
+  }
+  
+  .property-details-container .details-container:last-child {
+    padding-top: 10px;
+  }
+  
+  .property-details-container .details-container:last-child div input {
+    width: 96px;
+  }
+  
+  .property-details-container .details-container:last-child div input[type="date"] {
+    width: 96px;
+  }
+  
+  .window-new-listing-container .bottom-navigation-container .agent-name {
+    width: 48%;
+  }
+  
+  .calculate-button {
+    width: 165px;
+    box-shadow: 0px 3px 6px #00000029;
+    font-size: 10px;
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-weight: 500;
+  }
+  
+  .edit-details-link {
+    font-size: 10px;
+    color: #4139FF;
+    text-decoration: underline;
+  }
+  
+  .booster-details-address {
+    font-size: 9px;
+    font-weight: bold;
+  }
+  
+  .booster-offer-container {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .offer-amount-container {
+    border: 1px solid #4139FF;
+    border-radius: 8px;
+    width: 198px;
+    height: 33px;
+    color: #4139FF;
+    display: flex;
+    text-align: center;
+  }
+  
+  .offer-amount-heading {
+    font-size: 9px;
+    margin-left: 26px;
+    margin-top: 9px;
+  }
+  
+  .offer-amount {
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 6px;
+  }
+  
+  .no-fee-button-container {
+    margin-left: 10px;
+    margin-top: -7px;
+  }
+  
+  .return-heading {
+    font-size: 9px;
+  }
+  
+  .create-proposal-no-fee-button {
+    width: 142px;
+    font-size: 10px;
+  }
+  
+  .booster-approval-fee-container {
+    background-color: #effdf196;
+    border-top: 1px solid #00B8A5;
+    border-bottom: 1px solid #00B8A5;
+    margin-top: 10px;
+    width: 416px;
+    margin-left: -30px;
+    height: 281px;
+  }
+  
+  .fee-continue-heading {
+    color: #00B8A5;
+    font-size: 9px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .fee-options-container {
+    margin-left: 30px;
+  }
+  
+  .fee-options-container label {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  input[type="checkbox"] {
+    width: unset;
+    border: 1px solid #00B8A5;
+  }
+  
+  .booster-mini-container {
+    display: flex;
+    margin: 4px 0 15px 4px;
+  }
+  
+  .booster-mini-container div:first-child {
+    width: 85%;
+  }
+  
+  .booster-mini-container div:last-child {
+    width: 70%;
+  }
+  
+  .booster-mini-container div:not(:first-child):not(:last-child) {
+    width: 63%;
+  }
+  
+  .mini-label {
+    font-size: 8px !important;
+    margin-bottom: 2px;
+  }
+  
+  .mini-content {
+    font-size: 12px;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .agent-pays-container .mini-label {
+    font-size: 9px !important;
+  }
+  
+  .agent-pays-container div {
+    margin-left: 2px;
+  }
+  
+  .agent-pays-container input:not([type="checkbox"]) {
+    background-color: #f8fcf896;
+    border: none;
+    border-bottom: 1px solid #dedede;
+    border-radius: unset;
+    width: 124px;
+    padding-left: 5px;
+    height: 10px;
+  }
+  
+  .net-commission {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #00B8A5;
+    border-radius: 8px;
+    width: 198px;
+    height: 33px;
+  }
+  
+  .net-commission-heading {
+    font-size: 9px;
+    color: #00B8A5;
+    margin-top: 10px;
+    margin-left: 14px !important;
+  }
+  
+  .net-commission-amount {
+    font-size: 13px;
+    color: #00B8A5;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-left: 8px !important;
+  }
+  
+  .create-proposal-fee-button {
+    background-color: #00B8A5;
+    width: 142px;
+    font-size: 10px;
+  }
+  
+  .proposed-commission-input:not(:placeholder-shown) {
+    font-weight: normal !important;
+  }
+  
+  .window-approved-booster-container .bottom-navigation-container .agent-name {
+    width: 46%;
+  }
+  
+  .return-to-dashboard-button {
+    width: 169px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  
+  .window-application-container h2 {
+    color: #4139FF;
+    font-size: 31px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  
+  .details-address {
+    margin-bottom: 10px;
+  }
+  
+  .partner-portal-link {
+    text-decoration: underline;
+    font-size: 12px;
+  }
+  
+  .property-owner-main-details {
+    background-color: #effdf196; 
+    border-top: 1px solid #00B8A5; 
+    border-bottom: 1px solid #00B8A5; 
+    width: 416px; 
+    margin-left: -30px; 
+    height: 96px; 
+  }
+  
+  .property-owner-details-details {
+    display: flex;
+    margin-left: 26px;
+    margin-top: 5px;
+  }
+  
+  .listing-agent-main-details {
+    background-color: #effdf196; 
+    border-top: 1px solid #00B8A5; 
+    border-bottom: 1px solid #00B8A5; 
+    width: 416px; 
+    margin-left: -30px; 
+    height: 186px;
+  }
+  
+  .listing-agent-details {
+    margin-left: 30px;
+  }
+  
+  .listing-agent-main-details input:not([type="checkbox"]) {
+    background-color: #f8fcf896;
+    border: none;
+    border-bottom: 1px solid #dedede;
+    border-radius: unset;
+    width: 124px;
+    padding-left: 5px;
+    height: 10px;
+  }
+  
+  .listing-agent-main-details .net-commission {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #00B8A5;
+    border-radius: 8px;
+    width: 349.56px;
+    height: 33px;
+  }
+  
+  .listing-agent-main-details .net-commission-heading {
+    margin-left: 94px !important;
+  }
+  
+  .mapSearchResults {
+    display: none;  
+    left: 10px;
+    width: 96% !important;
+    z-index:9999;
+    background-color: #FFFFFF; 
+    border: 1px #CCCCCC solid;
+    border-radius: 8px;
+  }
+  .mapSearchResultsItem {
+    padding: 4px;  
+    width: 96% !important;
+    border-bottom: 1px #CCCCCC solid;
+  }
+  .mapSearchResultsItem:hover {
+    background-color: #EEEEEE;
+  }
